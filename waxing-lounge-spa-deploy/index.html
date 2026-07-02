@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Waxing Lounge Spa — Lagos</title>
+<title>Waxing Lounge Spa | Lagos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -95,9 +95,9 @@
 
   /* HERO */
   .hero{
-    background:var(--midnight);min-height:100svh;display:flex;flex-direction:column;
+    background:var(--midnight);min-height:auto;display:flex;flex-direction:column;
     align-items:center;justify-content:center;text-align:center;
-    padding:120px 24px 100px;position:relative;overflow:hidden;
+    padding:96px 24px 56px;position:relative;overflow:hidden;
   }
   .hero-bg-orb{
     position:absolute;width:600px;height:600px;
@@ -105,8 +105,8 @@
     border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;
   }
   .hero-logo-wrap{
-    width:120px;height:120px;border-radius:22px;overflow:hidden;
-    margin:0 auto 28px;position:relative;z-index:1;
+    width:100px;height:100px;border-radius:22px;overflow:hidden;
+    margin:0 auto 16px;position:relative;z-index:1;
     box-shadow:0 0 0 1.5px var(--gold-border),0 16px 48px rgba(0,0,0,0.5);
   }
   .hero-eyebrow{
@@ -116,14 +116,14 @@
   .hero h1{
     font-family:'Fraunces',serif;font-optical-sizing:auto;font-weight:500;
     font-size:clamp(28px,6vw,54px);color:var(--white);
-    max-width:640px;margin:0 auto 16px;position:relative;z-index:1;letter-spacing:-0.01em;
+    max-width:640px;margin:0 auto 12px;position:relative;z-index:1;letter-spacing:-0.01em;
   }
   .hero h1 em{color:var(--gold);font-style:italic;font-weight:500;}
   .hero-sub{
     font-size:15px;color:var(--text-light);max-width:420px;
-    margin:0 auto 44px;line-height:1.75;position:relative;z-index:1;
+    margin:0 auto 28px;line-height:1.65;position:relative;z-index:1;
   }
-  .hero-cta-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;position:relative;z-index:1;}
+  .hero-cta-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;position:relative;z-index:1;}
   .hero-btn-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center;}
   .btn-primary{
     background:var(--gold);color:var(--midnight);font-size:15px;font-weight:600;
@@ -141,14 +141,14 @@
   .hero-trust{font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:center;}
   .hero-trust-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;}
   .hero-scroll-hint{
-    position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
+    position:relative;margin-top:36px;
     display:flex;flex-direction:column;align-items:center;gap:6px;
     color:var(--text-muted);font-size:11px;letter-spacing:0.08em;
-    animation:nudge 2.5s ease-in-out infinite;
+    animation:nudge 2.5s ease-in-out infinite;z-index:1;
   }
   @keyframes nudge{
-    0%,100%{transform:translateX(-50%) translateY(0);}
-    50%{transform:translateX(-50%) translateY(6px);}
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(6px);}
   }
 
   /* SECTION SHARED */
